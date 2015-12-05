@@ -1,0 +1,9 @@
+<button id="hi" type="button"
+class="follow-toggle"
+data-user-id="<%= current_user.id %>"
+data-initial-follow-state="
+<%= @user.followees.include?(current_user) ? "followed" : "unfollowed" %>">
+loading...
+</button>
+<%= params %>
+<%= user_follow_path(params[:id]) %>
